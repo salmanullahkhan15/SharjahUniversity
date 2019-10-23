@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon class="menu-icon" name="menu"></ion-icon>
+    <ion-title>
+      Dashboard
+    </ion-title>
+    <img class="person" src="https://via.placeholder.com/30x30.png/c4c4c4?text=%20">
+    <img class="noti-icon" src="https://via.placeholder.com/30x30.png/c4c4c4?text=%20">
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+  <div class="content-area">
+
+    <div class="content-inn-head">
+      <h3>Popular Services</h3>
+      <img src="assets/icon/more.svg">
+    </div>
+
+    <ion-row class="pop-ser-grid">
+
+      <ion-col size=6 *ngFor="let item of popularServicesArray">
+        <div class="info-col">
+          <div class="icon-div">
+            <img [src]="item.icon">
+          </div>
+          <p>
+            {{item.title}}
+          </p>
+        </div>
+        <img class="bg-img" [src]="item.bgImg">
+      </ion-col>
+
+    </ion-row>
+
+    <div class="content-inn-head">
+      <h3>Latest News</h3>
+      <img src="assets/icon/more.svg">
+    </div>
+
+    <div class="thumnails">
+      <div class="list-thumbnail">
+        <div class="img-thumb" [class.selected-img]="x.selected" *ngFor="let x of images" (click)="onThumbnailClick(x)">
+          <div class="info-scrol-item">
+            <p>The University of Sharjah's Engineering Hosts the Nuclear...</p>
+            <div class="info-btm">
+              <img class="cal-icon" src="assets/icon/calendar.svg">
+              <span>16 October 2019</span>
+            </div>
+          </div>
+          <img class="bg-img" [src]="x.image">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</ion-content>
