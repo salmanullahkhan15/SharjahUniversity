@@ -1,36 +1,28 @@
 ion-header {
-
     ion-toolbar {
         --background: var(--custom-orange);
         --border-width: 0px;
     }
-
     ion-title {
         color: var(--custom-white);
     }
-
     .person {
         float: right;
         border-radius: 150px;
     }
-
     .noti-icon {
         float: right;
         margin-right: 2%;
         border-radius: 150px;
     }
-
     .menu-icon {
         font-size: 27px;
         color: var(--custom-white);
     }
-
-
 }
 
 ion-content {
     --background: var(--custom-orange);
-
     .content-area {
         background: #fff;
         width: 100%;
@@ -38,51 +30,41 @@ ion-content {
         margin-top: 0%;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
-
-
         .content-inn-head {
             width: 100%;
             float: left;
             padding-left: 5%;
             padding-right: 5%;
             margin-top: 2%;
-
             h3 {
                 float: left;
             }
-
             img {
                 width: 6%;
                 float: right;
                 margin-top: 6%;
             }
         }
-
         .pop-ser-grid {
             width: 100%;
             text-align: center;
             padding-right: 3%;
             padding-left: 3%;
-
             .bg-img {
                 border-radius: 15px;
             }
-
             .info-col {
                 position: absolute;
                 width: 100%;
-
                 .icon-div {
                     width: 100%;
                     float: left;
                     margin-top: 10%;
-
                     img {
                         float: left;
                         margin-left: 15%;
                     }
                 }
-
                 p {
                     float: left;
                     margin-top: 30%;
@@ -93,50 +75,49 @@ ion-content {
                 }
             }
         }
-
         .thumnails {
             overflow-x: scroll;
             overflow-y: hidden;
             width: 100%;
-
             .list-thumbnail {
-                height: 100%;
-                white-space: nowrap;
-
+                // height: 100%;
+                // white-space: nowrap;
+                width: 100%;
+                // margin-top: 10%;
                 .img-thumb {
-                    display: inline-block;
+                    // display: inline-block;
                     margin-left: 5%;
+                    width: 50%;
+                    min-width: 50%;
+                    margin-top: 4%;
                 }
-
                 .bg-img {
                     border-radius: 15px;
+                    margin-top: -105%;
                 }
-
                 .info-scrol-item {
-                    position: absolute;
-                    width: 50%;
+                    // position: absolute;
+                    // width: 50%;
+                    z-index: 10;
                     // float: left;
-
                     p {
                         float: left;
                         width: 100%;
                         white-space: pre-wrap;
                         font-size: 17px;
                         padding: 5%;
+                        margin: 0px !important;
                         color: var(--custom-white)
                     }
-
                     .info-btm {
                         float: left;
-                        margin-top: 30%;
+                        margin-top: 28%;
                         margin-left: 6%;
-
                         .cal-icon {
                             width: 13%;
                             float: left;
                             margin-top: -1%;
                         }
-
                         span {
                             margin-left: 2%;
                             font-size: 13px;
@@ -146,10 +127,8 @@ ion-content {
                 }
             }
         }
-
-        ::-webkit-scrollbar {
+         ::-webkit-scrollbar {
             display: none;
         }
-
     }
 }
