@@ -1,3 +1,87 @@
-.bg-login{
-    --background: url(../../assets/img/bg.png) 0 0/100% 100% no-repeat;
+.bg-login {
+    --background: url(../../assets/img/bg-green.png) 0 0/100% 100% no-repeat;
+}
+
+.content-area {
+    margin-top: 80%;
+}
+
+.form-data {
+    width: 90%;
+    margin: auto;
+    background: var(--custom-white);
+    float: left;
+    margin-left: 5%;
+    border-radius: 7px;
+
+    img {
+        width: 6%;
+        float: left;
+        margin: auto;
+        text-align: center;
+        margin-left: 4%;
+        margin-top: 3%;
+    }
+
+    ion-input {
+        width: 85%;
+        float: right;
+        border-left: 1px solid rgba(33, 146, 145, 0.17);
+        --padding-start: 5%;
+        // input {
+        //     padding-left: 5%;
+        // }
+    }
+
+    .input-item {
+        width: 100%;
+        float: left;
+        border-bottom: 1px solid rgba(33, 146, 145, 0.17);
+        ;
+    }
+}
+
+.btn-div {
+    ion-button {
+        --background-activated: var(--custom-light-green);
+        --background: var(--custom-light-green);
+        --background-focused: var(--custom-light-green);
+        --background-hover: var(--custom-light-green);
+        width: 90%;
+        margin: auto;
+        margin-left: 5%;
+    }
+
+    .sign-btn {
+        margin-top: 5%
+    }
+
+    .guest-btn {
+        margin-top: 5%
+    }
+}
+
+.btm-text {
+    width: 90%;
+    float: left;
+    margin-left: 10%;
+
+    .txt-left {
+        width: 50%;
+        float: left;
+        color: var(--custom-white);
+        font-size: 12px;
+
+        span {
+            font-weight: 600;
+        }
+
+    }
+
+    .txt-right {
+        width: 50%;
+        float: right;
+        color: var(--custom-white);
+        font-size: 12px;
+    }
 }
