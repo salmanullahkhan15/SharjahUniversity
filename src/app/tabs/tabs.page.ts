@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  iconOne: any = 'assets/icon/icon-white.svg';
+  IconOneSelected: any = 'assets/icon/icon-orange.svg';
+  // IconOneSelected: any = 'assets/icon/one-icon.png';
+  oneSelected: number = 1
+  constructor() { }
+  selecTab(n) {
+    this.oneSelected = n
+  }
 
 }

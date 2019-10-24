@@ -1,1 +1,10 @@
+.tab-custom {
+    --background: var(--custom-grey);
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
+    ion-icon {
+        border-radius: 170px;
+        font-size: 40px;
+    }
+}
