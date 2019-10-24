@@ -1,5 +1,4 @@
 ion-header {
-
     ion-toolbar {
         --background: var(--custom-orange);
         --border-width: 0px;
@@ -34,8 +33,6 @@ ion-header {
         margin-left: 1%;
 
     }
-
-
 }
 
 ion-content {
@@ -48,7 +45,6 @@ ion-content {
         margin-top: 0%;
         border-top-left-radius: 40px;
         border-top-right-radius: 40px;
-
 
         .content-inn-head {
             width: 100%;
@@ -110,35 +106,43 @@ ion-content {
             width: 100%;
 
             .list-thumbnail {
-                height: 100%;
-                white-space: nowrap;
+                // height: 100%;
+                // white-space: nowrap;
+                width: 100%;
 
+                // margin-top: 10%;
                 .img-thumb {
-                    display: inline-block;
+                    // display: inline-block;
                     margin-left: 5%;
+                    width: 50%;
+                    min-width: 50%;
+                    margin-top: 4%;
                 }
 
                 .bg-img {
                     border-radius: 15px;
+                    margin-top: -105%;
                 }
 
                 .info-scrol-item {
-                    position: absolute;
-                    width: 50%;
-                    // float: left;
+                    // position: absolute;
+                    // width: 50%;
+                    z-index: 10;
 
+                    // float: left;
                     p {
                         float: left;
                         width: 100%;
                         white-space: pre-wrap;
                         font-size: 17px;
                         padding: 5%;
+                        margin: 0px !important;
                         color: var(--custom-white)
                     }
 
                     .info-btm {
                         float: left;
-                        margin-top: 30%;
+                        margin-top: 28%;
                         margin-left: 6%;
 
                         .cal-icon {
@@ -160,6 +164,5 @@ ion-content {
         ::-webkit-scrollbar {
             display: none;
         }
-
     }
 }
